@@ -1,0 +1,20 @@
+<input #inputbox data-testid = "email" value = "write the email">
+<app-button
+  #button1
+  data-testid = "button1"
+  (onClick)="onClean(inputbox)"
+  (onDoubleClick)="onChangePmr(button1.primary)"
+  [size]="size1"
+  [label]="label1"
+  >
+</app-button>
+<app-button
+  #button2
+  data-testid = "button2"
+  (onClick)="onClean(inputbox)"
+  (onDoubleClick)="onChangePmr(button2.primary)"
+  [size]="size2"
+  [primary]="primary"
+  [label]="label2"
+  >
+</app-button>
