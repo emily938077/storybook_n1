@@ -37,7 +37,7 @@ status1.play = async ({canvasElement}) => {
   const canvas = within(canvasElement);
   await new Promise(f => setTimeout(f, 1000));
   userEvent.clear(await within(canvasElement).getByTestId('email'));
-  await userEvent.type(canvas.getByTestId('email'), 'aaa@mail.com',{delay:100});
+  await userEvent.type(canvas.getByTestId('email'), 'aaa@mail.com',{delay:200});
   await userEvent.click(canvas.getByTestId('button1'));
 };
 
